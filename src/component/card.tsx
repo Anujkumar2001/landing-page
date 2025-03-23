@@ -25,7 +25,7 @@ const Card = ({ title, monthlyPrice, buttonText, popular, inverse, features, id 
         ]);
     }, [animate]);
     return (
-        <div className={`card ${inverse ? 'bg-[#191919] text-white' : 'text-black'}`}>
+        <div className={`card ${inverse ? 'bg-[#191919] text-white' : 'text-black'} max-w-[300px] min-w-[150px]`}>
             <div className='flex items-center justify-between'>
                 <h3 className={`${inverse ? 'text-white' : 'text-black'}`}>{title}</h3>
                 {popular && <motion.span
@@ -46,7 +46,7 @@ const Card = ({ title, monthlyPrice, buttonText, popular, inverse, features, id 
             </div>
             <button
                 ref={scope}
-                className={`bg-[#191919] w-full py-2 px-4 rounded-xl ${inverse ? 'bg-white text-black' : 'bg-[#191919] text-white'}`}>{buttonText}</button>
+                className={`bg-[#191919] w-full py-2 px-4 rounded-xl ${inverse ? 'bg-white text-black' : 'bg-[#191919] text-white'} mt-4`}>{buttonText}</button>
             <ul className='flex flex-col gap-2 mt-4'>
                 {features.map((feature) => (
                     <li key={id} className={`flex gap-3 items-center ${inverse ? 'text-white' : 'text-black'}`}>  <MdDone />

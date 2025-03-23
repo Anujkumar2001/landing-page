@@ -14,12 +14,11 @@ const Pricing = () => {
             "popular": false,
             "inverse": false,
             "features": [
-                "Access to basic features",
-                "Limited to 2 users",
+                "Create and manage small tournaments",
+                "Limited to 2 teams",
                 "Email support",
                 "100GB storage",
-                "Advanced analytics"
-
+                "Basic match analytics"
             ]
         },
         {
@@ -30,12 +29,12 @@ const Pricing = () => {
             "popular": true,
             "inverse": true,
             "features": [
-                "Access to all pro features",
-                "Up to 10 users",
+                "Create and manage unlimited tournaments",
+                "Up to 10 teams",
                 "Priority email support",
-                "10GB storage",
-                "Advanced analytics",
-                "100GB storage",
+                "200GB storage",
+                "Advanced match analytics",
+                "Automated scheduling"
             ]
         },
         {
@@ -46,17 +45,17 @@ const Pricing = () => {
             "popular": false,
             "inverse": false,
             "features": [
-                "Access to all features",
-                "Unlimited users",
+                "All Pro Plan features",
+                "Unlimited teams",
                 "24/7 phone & email support",
-                "100GB storage",
-                "Advanced analytics",
+                "500GB storage",
+                "Custom branding",
                 "Dedicated account manager",
-                "Custom integrations",
-                "Custom integrations",
+                "Custom API integrations"
             ]
         }
     ]
+
     const time = useTime()
     const rotate = useTransform(time, [0, 3000], [0, 360], {
         clamp: false
@@ -67,7 +66,7 @@ const Pricing = () => {
             <div className='container mx-auto px-5 py-32'>
                 <div className='flex flex-col justify-center items-center gap-3'>
                     <div className='tagTitle relative'>
-                        <h2 className='relative z-10 bg-white px-2 py-1 rounded-lg'>New version is here</h2>
+                        <h2 className='relative z-10 bg-white px-2 py-1 rounded-lg'>Pick the Perfect Plan!</h2>
                         <motion.div className='absolute  -inset-0.5 rounded-lg'
                             style={{
                                 background: rotateColor
@@ -75,7 +74,7 @@ const Pricing = () => {
                         ></motion.div>
                     </div>                    <h1 className="mainTitle text-black">Simple pricing for your business</h1>
                 </div>
-                <div className='flex gap-6 mt-10 flex-col md:flex-row items-center md:items-end justify-center'>
+                <div className='flex gap-6 mt-10 flex-col md:flex-row items-center md:items-end justify-center flex-wrap'>
                     {pricingData.map((card) => <Card key={card.title} {...card} />)}
                 </div>
             </div>

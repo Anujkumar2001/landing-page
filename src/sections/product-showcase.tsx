@@ -26,12 +26,12 @@ const ProductShowcase = () => {
                             }}
                         ></motion.div>
                     </div>
-                    <h2 className='mainTitle'>Explore our latest products with us!</h2>
-                    <p className='text-[22px] md:text-[25px] text-center tracking-tighter text-[#383a41] leading-[30px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+                    <h2 className='mainTitle'>Host & Play Cricket Tournaments with Ease!</h2>
+                    <p className='text-[22px] md:text-[25px] text-center tracking-tighter text-[#383a41] leading-[30px]'>A seamless way to create, manage, and enjoy competitive cricket matches</p>
                 </div>
                 <div className="w-full relative justify-center  flex">
                     <img
-                        src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dGVjaHxlbnwwfHwwfHx8MA%3D%3D"
+                        src="https://img.freepik.com/free-vector/gradient-tournament-schedule-template_23-2149639200.jpg?t=st=1742739540~exp=1742743140~hmac=7efdfb35c532ea2eaec048c3e9e4f4213d598ff7844775b4ecd86a688a46677b&w=996"
                         alt="Product"
                         className="md:w-[90%] w-full max-h-[500px] object-cover rounded-xl shadow-2xl mt-10"
                         loading="lazy"

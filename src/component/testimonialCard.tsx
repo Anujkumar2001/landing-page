@@ -20,8 +20,10 @@ const TestimonialCard = ({ testimonials, classname, duration = 10 }: { testimoni
                         return (
                             <div className='card' key={username}>
                                 <p className='text-black font-medium leading-tight '>{text}</p>
-                                <div className='flex items-center gap-4'>
-                                    <img src={imageSrc} alt={username} width={50} height={50} />
+                                <div className='flex items-center gap-4 mt-3'>
+                                    <div className='h-[50px] w-[50px]'>
+                                        <img src={imageSrc} alt={username} className="rounded-full" />
+                                    </div>
                                     <div>
                                         <h3 className='text-black'>{name}</h3>
                                         <p className='text-black'>{username}</p>

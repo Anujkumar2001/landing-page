@@ -22,7 +22,7 @@ const Hero = () => {
                 <div className="flex flex-col items-start gap-4 text-center md:text-left">
 
                     <div className='tagTitle relative'>
-                        <h2 className='relative z-10 bg-white px-2 py-1 rounded-lg'>New version is here</h2>
+                        <h2 className='relative z-10 bg-white px-2 py-1 rounded-lg'>Get Our App </h2>
                         <motion.div className='absolute  -inset-0.5 rounded-lg'
                             style={{
                                 background: rotateColor
@@ -30,10 +30,10 @@ const Hero = () => {
                         ></motion.div>
                     </div>
                     <h1 className="text-5xl text-left md:text-7xl font-bold tracking-tighter bg-gradient-to-b from-[#5231c0] to-[#021143] text-transparent bg-clip-text">
-                        Anuj Kumar Sharma
+                        CirTournament - Create Cricket Tournament Easily
                     </h1>
-                    <p className=" max-w-lg text-xl text-left bg-gradient-to-b from-[#021143] to-[#021143] text-transparent bg-clip-text ">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus repudiandae voluptate architecto labore est sit ipsum, dicta maxime placeat iusto!
+                    <p className=" max-w-3xl text-xl text-left bg-gradient-to-b from-[#021143] to-[#021143] text-transparent bg-clip-text ">
+                        Create Cricket Match Tournament in just a few clicks. CirTournament helps you to create a tournament with a simple and easy-to-use interface.
                     </p>
                     <div className="flex gap-4 mt-4">
                         <button className="bg-black px-4 py-2 text-white rounded-sm leading-tight">
