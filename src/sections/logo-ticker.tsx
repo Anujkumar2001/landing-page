@@ -1,8 +1,8 @@
 'use client'
-import React, { useRef } from 'react'
+import React from 'react'
 import jio from "@/assets/jio.png"
 import Image from 'next/image'
-import { motion, useMotionValueEvent, useScroll, useTransform, } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 const LogoTicker = () => {
 

@@ -1,9 +1,7 @@
 'use client'
 import React, { useRef } from 'react'
-import ProductImage from "@/assets/product.webp"
 import circle from "@/assets/circle.webp"
-import Image from 'next/image'
-import { motion, useScroll, useTransform, useMotionValueEvent, useTime, useAnimate } from 'framer-motion'
+import { motion, useScroll, useTransform, useTime } from 'framer-motion'
 const ProductShowcase = () => {
     const productRef = useRef(null);
     const time = useTime()

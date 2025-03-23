@@ -1,7 +1,7 @@
 'use client'
 import React, { useEffect } from 'react'
 import { MdDone } from "react-icons/md";
-import { animate, motion, useAnimate } from 'framer-motion';
+import { motion, useAnimate } from 'framer-motion';
 interface CardProps {
     title: string;
     monthlyPrice: number;

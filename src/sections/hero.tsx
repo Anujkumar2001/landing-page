@@ -1,9 +1,8 @@
 'use client'
-import React, { useEffect, useRef } from 'react'
+import React, { useRef } from 'react'
 import setting from "@/assets/setting.webp"
-import Image from 'next/image'
 import cylnder from "@/assets/cylinder.webp"
-import { motion, useMotionValue, useMotionValueEvent, useScroll, useTime, useTransform } from "framer-motion";
+import { motion, useScroll, useTime, useTransform } from "framer-motion";
 const Hero = () => {
     const heroRef = useRef(null)
     const time = useTime()

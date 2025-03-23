@@ -90,12 +90,12 @@ const Testimonial = () => {
                 <p className="subtitle">We value your feedback and strive to provide the best possible experience for our users. Your satisfaction is our top priority.</p>
                 <div className='flex justify-center gap-4'>
                     {device === 'ismobile' && <>
-                        <TestimonialCard testimonials={firstColumn} duration={10} />
+                        <TestimonialCard testimonials={firstColumn} duration={10} classname="" />
                     </>}
 
                     {device === 'tablet' && <>
-                        <TestimonialCard testimonials={secondColumn} duration={15} />
-                        <TestimonialCard testimonials={thirdColumn} duration={20} />
+                        <TestimonialCard testimonials={secondColumn} duration={15} classname="" />
+                        <TestimonialCard testimonials={thirdColumn} duration={20} classname="" />
                     </>}
                     {device === 'bigsreen' && <>
                         <TestimonialCard testimonials={firstColumn} duration={10} />
