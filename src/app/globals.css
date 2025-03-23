@@ -14,7 +14,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #EAEEFE
+    ;
     --foreground: #ededed;
   }
 }
@@ -23,4 +24,46 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.mainTitle{
+  @apply text-3xl md:text-6xl text-center font-bold tracking-tighter  bg-gradient-to-b from-[#5231c0] to-[#021143] text-transparent bg-clip-text
+}
+
+.subtitle{
+  @apply text-[22px] md:text-[25px] text-center tracking-tighter text-[#383a41] leading-[30px]
+}
+
+.tagTitle{
+  @apply text-sm inline-flex border text-black border-black rounded-lg  md:text-xl text-center 
+}
+
+.btn{
+  @apply bg-black text-white py-2 px-4 rounded-xl text-center inline-flex tracking-tight 
+}
+
+.social-icon{
+  @apply text-gray-400 text-xl md:text-2xl
+}
+
+.nav-item{
+  @apply text-gray-400  text-[14px] md:text-[16px]
+} 
+
+/**
+ * The CSS class for the card component.
+ *
+ * The card component is a container which groups related information
+ * together. It has a border, a white background, and some padding.
+ *
+ * The card component is a flex container which displays its children in a
+ * column. The children are spaced with a 1rem gap.
+ *
+ * The card component has a subtle shadow effect to make it stand out.
+ *
+ * The card component is used in the pricing section to display the prices
+ * of the different plans.
+ */
+.card{
+  @apply flex  flex-col border-[#F1F1F1] text-black p-10 rounded-3xl shadow-[0_0_20px_rgba(0.1,0.1,0.1,0.1)]
 }
